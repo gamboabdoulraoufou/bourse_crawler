@@ -1,4 +1,11 @@
-# bourse_crawler
+## Web crawling
+Je montre dans cet article comment configurer un server pour crawler des sites web en utilisant le framework scrapy. 
+
+### Ma configuration
+OS: Debian wheezy
+CPU: 1
+RAM: 3.75G
+Stockage: 10G
 
 #### On met d'abord à jour notre liste de packages.
 ```sh
