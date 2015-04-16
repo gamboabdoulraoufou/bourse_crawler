@@ -36,16 +36,20 @@ import MySQLdb
 exit
 ```
 
-#### On crée une base de données 
+#### Configurer une base de données mysql pour stocker les données 
+ 
 ```sh
+# Connexion à la Mysql
 mysql --user=root --password=1234  # On se connecte à la base de données
 ```
 ```sql
-CREATE USER 'abdoul'@'localhost' IDENTIFIED BY 'abdoul'; # On ajoute l'ulisateur abdoul  
-CREATE DATABASE boursorama_database; # On crée une base de données
-select host, user, password from mysql.user; # lister les utilisateurs
+-- On crée un utilisateur
+CREATE USER 'abdoul'@'localhost' IDENTIFIED BY 'abdoul'; # On ajoute l'ulisateur abdoul 
 
-# Création des tables
+-- On crée une base de données
+CREATE DATABASE boursorama_database; # On crée une base de données
+
+-- On crée des tables
 CREATE TABLE boursorama_database.cours_action (
 	tt_id MEDIUMINT NOT NULL AUTO_INCREMENT
 	,date_insert TIMESTAMP DEFAULT CURRENT_TIMESTAMP
@@ -59,6 +63,7 @@ CREATE TABLE boursorama_database.cours_action (
     ,PRIMARY KEY (tt_id)
 ) ENGINE = InnoDB CHARSET = utf8;
 
+-- On quitte Mysql
 exit # on quitte mysql
 ```
 
