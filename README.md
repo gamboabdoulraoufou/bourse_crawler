@@ -26,7 +26,7 @@ sudo apt-get install build-essential libxml2-dev libssl-dev libffi-dev python-de
 sudo apt-get install mysql-server mysql-client python-MySQLdb # mot de passe 1234
 ```
 
-# On test le module mysqldb
+#### On test le module mysqldb
 ```sh
 python
 ```
