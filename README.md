@@ -76,7 +76,9 @@ exit # on quitte mysql
 
 #### On installe scrapy
 ```sh
-env-scrapy/bin/pip install scrapy
+sudo apt-get install pip
+sudo pip install scrapy
+sudo pip install service_identity
 scrapy version
 ```
 
