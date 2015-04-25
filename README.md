@@ -79,6 +79,15 @@ exit # on quitte mysql
 sudo apt-get install pip
 sudo pip install scrapy
 sudo pip install service_identity
+sudo pip install selenium
+apt-get install iceweasel # Install firefox
+sudo apt-get install xvfb
+export DISPLAY=:1
+
+sudo apt-get install libxss1 libappindicator1 libindicator7
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome*.deb
+
 scrapy version
 ```
 
