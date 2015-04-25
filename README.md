@@ -88,6 +88,14 @@ sudo apt-get install libxss1 libappindicator1 libindicator7
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome*.deb
 
+wget ftp://ftp.mozilla.org/pub/mozilla.org/firefox/releases/30.0/linux-x86_64/en-US/firefox-30.0.tar.bz2
+tar -xjvf firefox-30.0.tar.bz2
+sudo rm -rf /opt/firefox*
+sudo mv firefox /opt/firefox30.0
+sudo ln -sf /opt/firefox30.0/firefox /usr/bin/firefox
+
+pip install pyvirtualdisplay
+
 scrapy version
 ```
 
