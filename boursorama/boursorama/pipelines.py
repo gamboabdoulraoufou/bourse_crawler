@@ -19,7 +19,7 @@ class MySQLPipeline(object):
                                                                     item['derniere_valeur'][0], item['maximum'][0], item['minimum'][0], item['volume'][0])
         if cursor.execute(sql):
             self.db.commit()
-            print 'Insered'
+            print 'Insered' # commentaire
         else:
             print 'Something wrong'
 
