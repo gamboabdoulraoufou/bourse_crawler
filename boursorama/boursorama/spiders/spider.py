@@ -5,6 +5,7 @@
 #import scrapy
 from scrapy.contrib.spiders import CrawlSpider, Rule
 from scrapy.contrib.linkextractors import LinkExtractor
+import sc
 
 from boursorama.items import CoursAction
 
