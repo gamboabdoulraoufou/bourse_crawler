@@ -7,7 +7,7 @@
 
 
 class MySQLPipeline(object):
-    def __init__(self):
+    def __init__(self): # commentire
         import MySQLdb
         self.db = MySQLdb.connect(host="localhost", user="root", passwd="1234", db="boursorama_database", charset="utf8")
 
