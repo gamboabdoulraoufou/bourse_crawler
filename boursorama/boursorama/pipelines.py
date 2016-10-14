@@ -26,5 +26,6 @@ class MySQLPipeline(object):
         #self.db.commit()
         return item
 
+    #eeeeee
     def spider_closed(self, spider):
         self.db.commit()
